@@ -38,3 +38,9 @@ selectElem.addEventListener('change', function(){
     document.getElementById(codeValue).style.color = "red"
 })
                 
+const image = document.querySelector('img');
+image.setAttribute("src", "images/html_js_css.jpg");
+
+document.body.className = "blue";
+
+//document.body.style.backgroundColor = "lightblue";
