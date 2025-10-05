@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+main,
+footer {
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #1E90FF;
+  color: white;
+}
+main {
+    background-color: #ccc;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ccc;
+}
+h1 {
+    text-align: center;
+}
+section {
+  padding: 20px;
+  background-color: #ccc;
+  margin: 1em;
+  border: 1px solid #ccc;
+}
+nav a {
+    padding: 20px;
+    color: white;
+    display: none;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #616061;
+}
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 15px auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 5px 5px 10px black;
+  }
+h2 {
+    background-color: #ccc;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: normal;
+}
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1000px) {
+    nav {
+        text-align: center;
+    }
+    nav a {
+        display: inline;
+    }
+    .menu-btn {
+        display: none;
+    }
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+           
