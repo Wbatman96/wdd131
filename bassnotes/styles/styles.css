@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Delicious+Handrawn|Vend+Sans");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #5E0B15;
+  --secondary-color: #C0BCB5;
+  --accent1-color: #9C6615;
+  --accent2-color: #033F63;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Delicious Handrawn";
+  --paragraph-font: "Vend Sans", Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+#container {
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+#logo {
+    max-height: 92px;
+}
+#heading {
+  font-family: var(--heading-font);
+  font-size: 30px;
+}
+#flashcard {
+    max-width: 60%;
+    margin: 40px auto;
+    border: 2px solid black;
+    padding: 40px;
+    background-color: white;
+    color: black;
+    border: 8px solid var(--accent1-color);
+    border-radius: 12px;
+    padding: 5px;
+}
+#cardimage {
+  max-width: 100%;
+  height: auto;
+}
+#progress {
+  display: none;
+}
+button {
+  font-size: 20px;
+  color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 5px 50px;
+  margin: 5px;
+}
+footer {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--nav-link-color);
+}

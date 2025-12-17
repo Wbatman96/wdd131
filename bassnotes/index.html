@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bass Clef Notes</title>
-    <link rel="stylesheet" href="styles/bassnotes.css">
-    <script defer src="bassnotes.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="main.js"></script>
 </head>
 <body>
     <div id="container">
-        <header></header>
+        <header>
+            <nav>
+                <img src="images/logo.png" alt="bass clef notes logo" id="logo">
+				<a href="index.html">Home</a>
+			</nav>
+        </header>
         <main>
+            <div id="heading"><h1>Bass Notes Flashcards</h1></div>
             <div id="explanation">
-                <p></p>
+                <p>Are you looking to refine your skills at reading base clef notes? Go no further! Get started by clicking the start button below!</p>
             </div>
             <div id="flashcard">
-
+                <p id="question"></p>
+                <img src="images/bass_clef.png" alt="bass clef image" id="cardimage">
+                <p id="note_answer"></p>
+                <button type="button" id="start">Start!</button>
+            </div>
+            <div id="progress">
+                <p id="progress_text"></p>
+            </div>
+            <div id="buttons">
+                <button type="button" id="back">Back</button>
+                <button type="button" id="next">Next</button>
             </div>
         </main>
+        <footer><p>&copy; Westley Bateman</p></footer>
     </div>
 </body>
 </html>
