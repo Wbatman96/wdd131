@@ -6,6 +6,7 @@
     <title>Cool Pics Part 1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="coolpics.css">
+    <script defer src="coolpics.js"></script>
 </head>
 <body>
         
@@ -14,7 +15,7 @@
         <button class="menu-btn">
         Menu
         </button>
-        <nav>
+        <nav class="hide">
         <a href="#">Home</a>
         <a href="#">People</a>
         <a href="#">Places</a>
@@ -25,18 +26,39 @@
     
     <main>
         <h2>Current Work</h2>
-        <section>
-        <img src="geyser.jpg" alt="geyser">
-        <img src="geyser.jpg" alt="geyser">
-        <img src="geyser.jpg" alt="geyser">
-        <img src="geyser.jpg" alt="geyser">
-        <img src="geyser.jpg" alt="geyser">
-        <img src="geyser.jpg" alt="geyser">
-        <img src="geyser.jpg" alt="geyser">
-        <img src="geyser.jpg" alt="geyser">
-        <img src="geyser.jpg" alt="geyser">
+        <section class="gallery">
+            <figure>  
+                <img src="geyser-sm.jpg" alt="geyser">
+            </figure>
+            <figure>  
+                <img src="geyser-sm.jpg" alt="geyser">
+            </figure>
+            <figure>  
+                <img src="geyser-sm.jpg" alt="geyser">
+            </figure>
+            <figure>  
+                <img src="geyser-sm.jpg" alt="geyser">
+            </figure>
+            <figure>  
+                <img src="geyser-sm.jpg" alt="geyser">
+            </figure>
+            <figure>  
+                <img src="geyser-sm.jpg" alt="geyser">
+            </figure>
+            <figure>  
+                <img src="geyser-sm.jpg" alt="geyser">
+            </figure>
+            <figure>  
+                <img src="geyser-sm.jpg" alt="geyser">
+            </figure>
+            <figure>  
+                <img src="geyser-sm.jpg" alt="geyser">
+            </figure>
         </section>
-        
+        <dialog>
+            <img>
+            <button class="close-viewer">X</button>
+        </dialog>
     </main>
     <footer>Westley Bateman</footer>
 </body>
